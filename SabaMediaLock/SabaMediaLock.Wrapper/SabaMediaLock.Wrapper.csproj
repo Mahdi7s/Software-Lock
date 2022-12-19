@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AFF491D-93D9-4CB6-B84F-921C19E0E5DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SabaMediaLock.Wrapper</RootNamespace>
+    <AssemblyName>SabaMediaLock.Wrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MVWS.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>.\AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AssemblyLicense.License, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\AssemblyLicense.License.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.LicenseProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\AssemblyLicense.LicenseProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\AssemblyLicense.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Provider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\AssemblyLicense.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\AssemblyLicense.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareClient.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\SoftwareClient.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareSerial.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\SoftwareSerial.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareSerial.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\SoftwareSerial.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareSerial.DataModel">
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\SoftwareSerial.DataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareSerial.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b2c161b50c47042, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\SoftwareSerial.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareSerial.Server">
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\SoftwareSerial.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareSerial.Service">
+      <HintPath>..\..\SoftwareSerial\SoftwareSerialReleaseAssemblies\SoftwareSerial.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="TS7S.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c8cd79749a41ab9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TS7S\TS7S.Base\bin\Debug\TS7S.Base.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnablingWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnablingWizard.Designer.cs">
+      <DependentUpon>EnablingWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ActivationFailed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ActivationFailed.Designer.cs">
+      <DependentUpon>ActivationFailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ActivationSucceeded.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ActivationSucceeded.Designer.cs">
+      <DependentUpon>ActivationSucceeded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ActivationType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ActivationType.Designer.cs">
+      <DependentUpon>ActivationType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EnablingSoftware.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EnablingSoftware.Designer.cs">
+      <DependentUpon>EnablingSoftware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IActivationForm.cs" />
+    <Compile Include="Forms\InternetActivation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\InternetActivation.Designer.cs">
+      <DependentUpon>InternetActivation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SmsActivation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SmsActivation.Designer.cs">
+      <DependentUpon>SmsActivation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelActivation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\TelActivation.Designer.cs">
+      <DependentUpon>TelActivation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalShares.cs" />
+    <Compile Include="LockSetteings.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Shares.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StyleHelper.cs" />
+    <Compile Include="WebServer.cs" />
+    <EmbeddedResource Include="EnablingWizard.resx">
+      <DependentUpon>EnablingWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActivationFailed.resx">
+      <DependentUpon>ActivationFailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActivationSucceeded.resx">
+      <DependentUpon>ActivationSucceeded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActivationType.resx">
+      <DependentUpon>ActivationType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EnablingSoftware.resx">
+      <DependentUpon>EnablingSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InternetActivation.resx">
+      <DependentUpon>InternetActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SmsActivation.resx">
+      <DependentUpon>SmsActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelActivation.resx">
+      <DependentUpon>TelActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="MVWS.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="SabaMediaLock.Wrapper.lix" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SabaMediaLock.Contracts\SabaMediaLock.Contracts.csproj">
+      <Project>{5848230c-6bf8-40a9-8b1c-e3984b8d67bf}</Project>
+      <Name>SabaMediaLock.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SabaMediaLock.Utilities\SabaMediaLock.Utilities.csproj">
+      <Project>{95e0fe23-d6a4-4f09-b789-1178e69388d9}</Project>
+      <Name>SabaMediaLock.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Penguins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1343537608_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1343538164_green-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1343538881_Color MS Word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1343540082_icon_sandclock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_explorer_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms_icon1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>start xcopy "$(ProjectDir)\bin\Debug" "$(SolutionDir)SabaMediaLock.Locker\bin\Debug\Wrapper\" /s /i /y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

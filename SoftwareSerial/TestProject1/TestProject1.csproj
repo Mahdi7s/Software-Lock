@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85F8AAD2-B48B-4693-A289-B6C53599707B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestProject1</RootNamespace>
+    <AssemblyName>TestProject1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MVWS.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AESEncryptionTest.cs" />
+    <Compile Include="ByteTest.cs" />
+    <Compile Include="PackageAndHardwareMixedSerialMakerTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerialMakerTest.cs" />
+    <Compile Include="SerialRegistryManagerTest.cs" />
+    <Compile Include="SerialServiceTest.cs" />
+    <Compile Include="SerialValidatorTest.cs" />
+    <Compile Include="UserDataProtectionTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftwareClient.Utility\SoftwareClient.Utility.csproj">
+      <Project>{467E281F-338F-4878-9901-AC57862B6CC9}</Project>
+      <Name>SoftwareClient.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.Client\SoftwareSerial.Client.csproj">
+      <Project>{3A2304A1-F26F-4FFD-9035-F79A7827CBED}</Project>
+      <Name>SoftwareSerial.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.Contracts\SoftwareSerial.Contracts.csproj">
+      <Project>{31033DB0-2898-40CA-AB79-A75B843D77C3}</Project>
+      <Name>SoftwareSerial.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.DataModel\SoftwareSerial.DataModel.csproj">
+      <Project>{0010B8B5-195A-4B6B-8F3C-2F699FA2AD10}</Project>
+      <Name>SoftwareSerial.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.Model\SoftwareSerial.Model.csproj">
+      <Project>{0F5DB5AD-22A3-4EAB-8E38-3D31C35E4DC9}</Project>
+      <Name>SoftwareSerial.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.Server\SoftwareSerial.Server.csproj">
+      <Project>{93A33E4A-B4B8-4785-90A0-8351FC7C2B1B}</Project>
+      <Name>SoftwareSerial.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MVWS.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

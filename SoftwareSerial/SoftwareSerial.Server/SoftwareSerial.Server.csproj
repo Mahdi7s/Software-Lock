@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93A33E4A-B4B8-4785-90A0-8351FC7C2B1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftwareSerial.Server</RootNamespace>
+    <AssemblyName>SoftwareSerial.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SoftwareSerialReleaseAssemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MVWS.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AssemblyLicense.License, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.License.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.LicenseProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.LicenseProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Provider">
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SabaSoftwareLock\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoEnablingSerialMaker.cs" />
+    <Compile Include="AutoHardwareSerialCatcher.cs" />
+    <Compile Include="EnablingSerialMaker.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PackageAndHardwareOrginalCatcher.cs" />
+    <Compile Include="PackageSerialManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerialService.cs" />
+    <Compile Include="SoftwareSerialServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\SoftwareSerial.Contracts.dll" />
+    <Content Include="bin\Debug\SoftwareSerial.Contracts.pdb" />
+    <Content Include="bin\Debug\SoftwareSerial.DataModel.dll" />
+    <Content Include="bin\Debug\SoftwareSerial.DataModel.pdb" />
+    <Content Include="bin\Debug\SoftwareSerial.Model.dll" />
+    <Content Include="bin\Debug\SoftwareSerial.Model.pdb" />
+    <Content Include="bin\Debug\SoftwareSerial.Server.dll" />
+    <Content Include="bin\Debug\SoftwareSerial.Server.pdb" />
+    <Content Include="obj\Debug\SoftwareSerial.Server.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\SoftwareSerial.Server.dll" />
+    <Content Include="obj\Debug\SoftwareSerial.Server.pdb" />
+    <Content Include="SoftwareSerial.Server.csproj.DotSettings.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Debug\SoftwareSerial.Server.dll.config" />
+    <None Include="MVWS.pfx" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\SoftwareSerial.Server.csprojResolveAssemblyReference.cache" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftwareClient.Utility\SoftwareClient.Utility.csproj">
+      <Project>{467E281F-338F-4878-9901-AC57862B6CC9}</Project>
+      <Name>SoftwareClient.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.Contracts\SoftwareSerial.Contracts.csproj">
+      <Project>{31033DB0-2898-40CA-AB79-A75B843D77C3}</Project>
+      <Name>SoftwareSerial.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.DataModel\SoftwareSerial.DataModel.csproj">
+      <Project>{0010B8B5-195A-4B6B-8F3C-2F699FA2AD10}</Project>
+      <Name>SoftwareSerial.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftwareSerial.Model\SoftwareSerial.Model.csproj">
+      <Project>{0F5DB5AD-22A3-4EAB-8E38-3D31C35E4DC9}</Project>
+      <Name>SoftwareSerial.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

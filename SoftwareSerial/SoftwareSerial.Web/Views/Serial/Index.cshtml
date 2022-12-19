@@ -1,0 +1,59 @@
+﻿@model SoftwareSerial.Web.ViewModels.SerialReportViewModel
+
+@{
+    ViewBag.Title = "Serials List";
+}
+
+<hr/>
+@using(Html.BeginForm("Index", "Serial", FormMethod.Get))
+{
+    <center>
+        <select name="skey" id="skey">
+            <option value="PackageSerial">Package Serial</option>
+            <option value="HardwareSerial">Hardware Serial</option>
+            <option value="LastEnablingState">Last Enabling State</option>
+            <option value="UsedCount">Used Count</option>
+            <option value="TrackingCode">Tracking Code</option>
+        </select>
+        <input name="sval" type="search" autocomplete="on" value="@Model.Search.sval" autofocus/>
+        <input name="pageSize" type="number" min="40" max="100" value="@Model.Search.pageSize"/>
+        <input type="submit" class="k-button" value="Search" />
+    </center>
+}
+    <hr/>
+<ul id="serialsList">
+    @if(Model.Result != null && Model.Result.Count() > 0)
+    {
+        foreach (var userSerial in Model.Result)
+        {
+            <li class="serial">
+                <label>Package Serial: <h3>@userSerial.PackageSerial.Serial</h3></label>
+                @*<label>Hardware Serial: <h3>@userSerial.HardwareSerials</h3></label>*@
+                <label>Last Enabling State: <h3>@userSerial.UserSerialState.LastEnablingState</h3></label>
+            </li>
+        }
+    }
+</ul>
+    
+<style>
+    #serialsList {
+        list-style-type: none;
+    }
+    .serial {
+        float: left;
+        margin-left: 10px;
+        border: solid black 1px;
+        margin-top: 5px;
+        padding: 5px;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+
+<script type="text/javascript">
+    $(function () {
+        var dropdownList = $("#skey").kendoDropDownList().data("kendoDropDownList");
+        dropdownList.value("@Model.Search.skey");
+    });
+</script>

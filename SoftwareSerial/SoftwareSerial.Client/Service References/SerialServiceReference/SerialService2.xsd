@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.sabapardaz.com/services/ISerialService" elementFormDefault="qualified" targetNamespace="http://www.sabapardaz.com/services/ISerialService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:13402/SerialService.svc?xsd=xsd2" namespace="www.SabaPardaz.com/contracts/SerialValidationContract" />
+  <xs:element name="Validate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="softwareName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="packageSerial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="automatedHardwareSerial" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="www.SabaPardaz.com/contracts/SerialValidationContract" minOccurs="0" name="ValidateResult" nillable="true" type="q1:SerialValidationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

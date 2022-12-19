@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity Name="b9b54a45-9f4e-42cb-b7f3-00ed1a6f06ee"
+            Publisher="CN=Mahdi7s"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>SoftwareSerial.Metro</DisplayName>
+    <PublisherDisplayName>Mahdi7s</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>SoftwareSerial.Metro</Description>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="SoftwareSerial.Metro.App">
+        <VisualElements
+            DisplayName="SoftwareSerial.Metro"
+            Logo="Assets\Logo.png"
+            SmallLogo="Assets\SmallLogo.png"
+            Description="SoftwareSerial.Metro"
+            ForegroundText="light"
+            BackgroundColor="#222222">
+            <DefaultTile ShowName="allLogos" />
+            <SplashScreen Image="Assets\SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

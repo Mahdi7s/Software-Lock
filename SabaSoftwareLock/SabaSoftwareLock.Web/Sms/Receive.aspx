@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Receive.aspx.cs" Inherits="SabaSoftwareLock.Web.Sms.Receive" %>

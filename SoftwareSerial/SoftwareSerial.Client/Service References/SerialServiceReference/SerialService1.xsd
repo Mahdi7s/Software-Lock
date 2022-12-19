@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SoftwareSerial.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SoftwareSerial.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="UserSerialValidationResult">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IsValid" />
+      <xs:enumeration value="IsUsedMoreThan" />
+      <xs:enumeration value="PackageSerialIsNotInDb" />
+      <xs:enumeration value="HardwareSerialNotMatches" />
+      <xs:enumeration value="SoftwareNameNotMatchesPackageSerial" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UserSerialValidationResult" nillable="true" type="tns:UserSerialValidationResult" />
+</xs:schema>

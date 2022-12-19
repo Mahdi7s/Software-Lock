@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0010B8B5-195A-4B6B-8F3C-2F699FA2AD10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftwareSerial.DataModel</RootNamespace>
+    <AssemblyName>SoftwareSerial.DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SoftwareSerialReleaseAssemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MVWS.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AssemblyLicense.License, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.License.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.LicenseProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.LicenseProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Provider">
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="AssemblyLicense.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03a7dc0e29376f80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AssemblyLicense\AssemblyLicenseReleaseAssemblies\AssemblyLicense.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SabaSoftwareLock\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HardwareSerialRepository.cs" />
+    <Compile Include="Migrations\201208230500127_Mig1.cs" />
+    <Compile Include="Migrations\201208230500127_Mig1.Designer.cs">
+      <DependentUpon>201208230500127_Mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201208230643448_Mig2.cs" />
+    <Compile Include="Migrations\201208230643448_Mig2.Designer.cs">
+      <DependentUpon>201208230643448_Mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201208270515466_Mig3.cs" />
+    <Compile Include="Migrations\201208270515466_Mig3.Designer.cs">
+      <DependentUpon>201208270515466_Mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PackageSerialRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="SerialDbContext.cs" />
+    <Compile Include="SerialDbInitializer.cs" />
+    <Compile Include="SerialTrackingCodeRepository.cs" />
+    <Compile Include="SoftwareInfoRepository.cs" />
+    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="UnitOfWorkBase.cs" />
+    <Compile Include="UserRepository.cs" />
+    <Compile Include="UserSerialRepository.cs" />
+    <Compile Include="UserSerialSettingRepository.cs" />
+    <Compile Include="UserSerialStateRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MVWS.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftwareSerial.Model\SoftwareSerial.Model.csproj">
+      <Project>{0F5DB5AD-22A3-4EAB-8E38-3D31C35E4DC9}</Project>
+      <Name>SoftwareSerial.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201208230500127_Mig1.resx">
+      <DependentUpon>201208230500127_Mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201208230643448_Mig2.resx">
+      <DependentUpon>201208230643448_Mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201208270515466_Mig3.resx">
+      <DependentUpon>201208270515466_Mig3.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

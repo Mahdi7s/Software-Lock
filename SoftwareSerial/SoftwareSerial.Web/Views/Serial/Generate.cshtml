@@ -1,0 +1,48 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Generate";
+}
+<hr/>
+@using(Html.BeginForm("Generate","Serial",FormMethod.Get))
+{
+    <center>
+        <span>
+            <label>Serials Count: <input id="count" name="count" type="number" min="0" max="1000" value="100" autofocus/></label>
+            <input type="submit" value="Generate" class="k-button"/>
+        </span>
+    </center>
+}
+<hr/>
+
+<ul id="serialsList">
+    @if(Model != null && Model.Count() > 0)
+    {
+        foreach (var serial in Model)
+        {
+            <li class="serial">
+                <h3>@serial</h3>
+            </li>
+        }
+    }
+</ul>
+    
+<style type="text/css">
+    #serialsList {
+        list-style-type: none;
+    }
+
+    .serial {
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+        border: solid black 1px;
+        padding: 5px;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<script type="text/javascript">
+    $(function() {
+        $("#count").kendoNumericTextBox();
+    });
+</script>

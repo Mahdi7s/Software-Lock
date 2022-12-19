@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8b268c9e-7b90-411c-b404-d57e74e82b9c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:13402/SerialService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SerialService.wsdl" MetadataType="Wsdl" ID="4c2e7a85-2749-4536-a992-839936bef9a6" SourceId="1" SourceUrl="http://localhost:13402/SerialService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SerialService.xsd" MetadataType="Schema" ID="704caf92-febe-4d7e-9d85-94dd09dd617f" SourceId="1" SourceUrl="http://localhost:13402/SerialService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SerialService1.xsd" MetadataType="Schema" ID="2676887b-c3d2-479c-af85-b3033be771f6" SourceId="1" SourceUrl="http://localhost:13402/SerialService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SerialService2.xsd" MetadataType="Schema" ID="a9aea3be-bfef-48d3-96b1-4bf87d71470c" SourceId="1" SourceUrl="http://localhost:13402/SerialService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SerialService3.xsd" MetadataType="Schema" ID="8c98980a-1956-4bd8-a655-2e9f7a3edf34" SourceId="1" SourceUrl="http://localhost:13402/SerialService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SerialService1.wsdl" MetadataType="Wsdl" ID="e4a6ecfe-17ee-426c-8bf2-5c702067f733" SourceId="1" SourceUrl="http://localhost:13402/SerialService.svc?wsdl" />
+    <MetadataFile FileName="SerialService.disco" MetadataType="Disco" ID="2565c3c5-9e1c-4802-990d-5ec90e0e6b66" SourceId="1" SourceUrl="http://localhost:13402/SerialService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

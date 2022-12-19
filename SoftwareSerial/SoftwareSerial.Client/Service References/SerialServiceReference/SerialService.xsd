@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="www.SabaPardaz.com/contracts/SerialValidationContract" elementFormDefault="qualified" targetNamespace="www.SabaPardaz.com/contracts/SerialValidationContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:13402/SerialService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SoftwareSerial.Model" />
+  <xs:complexType name="SerialValidationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EnablingSerial" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SoftwareSerial.Model" minOccurs="0" name="Validation" type="q1:UserSerialValidationResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SerialValidationContract" nillable="true" type="tns:SerialValidationContract" />
+</xs:schema>

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{914561DE-FA45-4C09-B4F1-55FC90A4B0CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SabaMediaLock.Locker</RootNamespace>
+    <AssemblyName>SabaMediaLock.Locker</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MVWS.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TS7S.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c8cd79749a41ab9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TS7S\TS7S.Base\bin\Debug\TS7S.Base.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\DefaultThemes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\DefaultThemes.Designer.cs">
+      <DependentUpon>DefaultThemes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlashThemes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\FlashThemes.Designer.cs">
+      <DependentUpon>FlashThemes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\IWich.cs" />
+    <Compile Include="Controllers\ProcessingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\ProcessingForm.Designer.cs">
+      <DependentUpon>ProcessingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThemeSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\ThemeSelector.Designer.cs">
+      <DependentUpon>ThemeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WhichControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\WhichControl.Designer.cs">
+      <DependentUpon>WhichControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WichFileAddress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\WichFileAddress.Designer.cs">
+      <DependentUpon>WichFileAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WichText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\WichText.Designer.cs">
+      <DependentUpon>WichText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDialog.Designer.cs">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataSources.cs" />
+    <Compile Include="Models\DShare.cs" />
+    <Compile Include="Models\WizardState.cs" />
+    <Compile Include="Pathes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SiteServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controllers\DefaultThemes.resx">
+      <DependentUpon>DefaultThemes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\FlashThemes.resx">
+      <DependentUpon>FlashThemes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ProcessingForm.resx">
+      <DependentUpon>ProcessingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ThemeSelector.resx">
+      <DependentUpon>ThemeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\WhichControl.resx">
+      <DependentUpon>WhichControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\WichFileAddress.resx">
+      <DependentUpon>WichFileAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\WichText.resx">
+      <DependentUpon>WichText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDialog.resx">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MVWS.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\SiteServiceReference\SiteService.wsdl" />
+    <None Include="Service References\SiteServiceReference\SiteService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SiteServiceReference\SiteService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Add-32.png" />
+    <EmbeddedResource Include="Resources\Delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SabaMediaLock.Contracts\SabaMediaLock.Contracts.csproj">
+      <Project>{5848230c-6bf8-40a9-8b1c-e3984b8d67bf}</Project>
+      <Name>SabaMediaLock.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SabaMediaLock.Utilities\SabaMediaLock.Utilities.csproj">
+      <Project>{95e0fe23-d6a4-4f09-b789-1178e69388d9}</Project>
+      <Name>SabaMediaLock.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SiteServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiteServiceReference\SiteService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiteServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiteServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SiteServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SabaSoftwareLock.Web.LockService" CodeBehind="LockService.svc.cs" %>
