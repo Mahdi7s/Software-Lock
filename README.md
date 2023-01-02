@@ -1,1 +1,3 @@
-# Software-Lock
+A complete solution to add lock and activation serial code to a software project, implemented using .Net, C# , Asp.Net , Asp.Net MVC, Windows Forms Application and ...
+
+
